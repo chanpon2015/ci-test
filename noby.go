@@ -76,6 +76,7 @@ func NewNoby(key string, options ...NobyOption) *Noby {
 	return &noby
 }
 
+// APICall 
 func (n *Noby) APICall(text string) error {
 	values := url.Values{}
 	values.Add("appkey", n.key)
