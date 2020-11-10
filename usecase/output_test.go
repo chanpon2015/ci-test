@@ -3,7 +3,7 @@ package usecase_test
 import (
 	"testing"
 
-	"github.com/chanpon2015/test/usecase"
+	"github.com/chanpon2015/ci-test/usecase"
 )
 
 func TestOut(t *testing.T) {
