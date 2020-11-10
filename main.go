@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/chanpon2015/ci-test/usecase"
+)
 
 func main() {
-	fmt.Println(Output())
-}
-
-func Output()  string {
-	return "test"
+	o := usecase.NewOutput()
+	if err := o.Out(); err != nil {
+		fmt.Println(err)
+	}
 }
